@@ -7,8 +7,9 @@
       v-model="message"
       @keypress.enter="sendMessage"
     />
-    <button @click="sendMessage"
-      class="bg-blue-500 text-white rounded-full p-2 ml-2 hover:bg-blue-600 focus:outline-none"
+    <button
+      @click="sendMessage"
+      class="bg-green-500 text-white rounded-full p-2 ml-2 hover:bg-green-600 focus:outline-none"
     >
       <svg
         width="20px"
@@ -38,16 +39,16 @@
 import { ref } from 'vue';
 
 const emits = defineEmits<{
-  sendMessage: [text: string]
-}>()
+  sendMessage: [text: string];
+}>();
 
-const message = ref('')
+const message = ref('');
 
 const sendMessage = () => {
-  if (!message.value) return 
+  if (!message.value) return;
 
-  emits('sendMessage', message.value)
+  emits('sendMessage', message.value);
 
-  message.value = ''
-}
+  message.value = '';
+};
 </script>
