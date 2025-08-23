@@ -4,12 +4,17 @@
     <div class="bg-blue-500 p-4 text-white flex justify-between items-center">
       <span>Dad</span>
     </div>
-    <ChatMessage />
-    <MessageBox />
+    <ChatMessages :messages="messages"/>
+    <MessageBox @send-message="onMessage"/>
   </div>
 </template>
 
 <script setup lang="ts">
-import ChatMessage from '@/components/chat/ChatMessage.vue';
+import ChatMessages from '@/components/chat/ChatMessages.vue';
 import MessageBox from '@/components/chat/MessageBox.vue';
+import { useChat } from '@/composables/useChat';
+
+const { messages, onMessage } = useChat()
+
+
 </script>
