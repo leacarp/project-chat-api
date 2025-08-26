@@ -17,7 +17,7 @@ import TypingIndicator from './TypingIndicator.vue';
 
 interface Props {
   messages: ChatMessage[];
-  isTyping: boolean;
+  isTyping?: boolean;
 }
 
 const { messages, isTyping } = defineProps<Props>();
