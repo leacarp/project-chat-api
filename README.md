@@ -14,7 +14,7 @@
 ## 🎯 Cómo funciona
 
 1. **Escribe tu pregunta** en el campo de texto
-2. **Termina con "?"** para que Dad responda
+2. **Termina con "?"** para que El señor de la verdad responda
 3. **El señor de la verdad pensará** (verás las burbujas animadas)
 4. **Recibirás una respuesta**: Sí, No, o... ¡Maybe! 🎲
 
